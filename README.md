@@ -11,14 +11,11 @@ As variáveis são as seguintes:
 
 "a", "b" e "c" são matrizes/vetores oferecidas em arquivos .csv.
 
-## Algoritmo de solução
 * Proponha uma variação da VNS (variable neighborhood search) que seja adequada para resolver as versões mono-objetivo do problema, ou seja, para otimizar separadamente as funções fC() e fE(), considerando as restrições definidas.
 * Explicite como uma solução candidata será modelada computacionalmente.
 * Proponha pelo menos três (03) estruturas de vizinhança.
 * Proponha uma heurística construtiva inteligente para gerar a solução inicial.
 * Considere alguma estratégia de refinamento (busca local).
-
-## Resultados da otimização mono-objetivo (Utilizando Python)
 * Implemente e utilize o algoritmo proposto para resolver as versões mono-objetivo do problema. 
 * Como o método é estocástico, ele deve ser executado cinco vezes para cada uma das funçoes e os cinco resultados finais obtidos devem ser apresentados: para cada função otimizada (fC e fE), mostre os valores min, std e max considerando-se as 05 soluções finais encontradas.
 * Para cada funçao otimizada (fC e fE), apresente as 05 curvas de convergência do algoritmo sobrepostas em uma mesma figura, ou seja, evolução do valor de f em função do número de avaliações de soluçoes candidatas.
