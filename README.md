@@ -1,5 +1,4 @@
-# Teoria da Decisão (ELE088) - UFMG
-## Enunciado
+# Enunciado
 Uma empresa possui um conjunto T com "n" tarefas a serem realizadas e um conjunto A com "m" agentes disponíveis. Assuma que "c[i, j]" é o custo de atribuir a tarefa "j" ∈ T ao agente "i" ∈ A, "a[i, j]" é a quantidade de recursos necessários ao agente "i" ∈ A para realizar a tarefa "j" ∈ T , e "b[i]" é a disponibilidade total de recursos do agente "i" ∈ A.  
 
 As variáveis são as seguintes: 
