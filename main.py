@@ -8,12 +8,16 @@ c[5,50] -> matriz onde a posição c(i, j) contém o custo de atribuição da ta
 """
 
 import numpy as np
+import random
 
 def geraSolucaoInicial(m, n, a, b, c):
     x = np.zeros((m, n))  # Matriz de atribuições inicialmente vazia
     disponibilidade = np.copy(b)  # Vetor de capacidade disponível dos agentes
     
-    for j in range(n):
+    indices_tarefas = list(range(n))  # Lista de índices das tarefas
+    random.shuffle(indices_tarefas)  # Embaralhar os índices aleatoriamente
+    
+    for j in indices_tarefas:
         tarefa_atribuida = False
         menor_custo = float('inf')
         agente_escolhido = -1
