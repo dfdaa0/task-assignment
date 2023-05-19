@@ -1,22 +1,22 @@
-# Enunciado
-Uma empresa possui um conjunto T com "n" tarefas a serem realizadas e um conjunto A com "m" agentes disponíveis. Assuma que "c[i, j]" é o custo de atribuir a tarefa "j" ∈ T ao agente "i" ∈ A, "a[i, j]" é a quantidade de recursos necessários ao agente "i" ∈ A para realizar a tarefa "j" ∈ T , e "b[i]" é a disponibilidade total de recursos do agente "i" ∈ A.  
+# Problem Statement
+A company has a set T with "n" tasks to be performed and a set A with "m" available agents. Assume that "c[i, j]" is the cost of assigning task "j" ∈ T to agent "i" ∈ A, "a[i, j]" is the amount of resources required by agent "i" ∈ A to perform task "j" ∈ T, and "b[i]" is the total availability of resources for agent "i" ∈ A.  
 
-As variáveis são as seguintes: 
+The variables are as follows:
 
-* m: número de agentes = 5;
-* n: número de tarefas = 50;
-* a: matriz onde a posição a[i, j] contém a quantidade de recursos necessários ao agente i para processar a tarefa j;
-* c: matriz onde a posição c[i, j] contém o custo de atribuição da tarefa j ao agente i;
-* b: vetor onde a posição b[i] contém a capacidade total do agente i.
+* m: number of agents = 5;
+* n: number of tasks = 50;
+* a: matrix where the position a[i, j] contains the amount of resources required by agent i to process task j;
+* c: matrix where the position c[i, j] contains the cost of assigning task j to agent i;
+* b: vector where the position b[i] contains the total capacity of agent i.
 
-"a", "b" e "c" são matrizes/vetores oferecidas em arquivos .csv.
+"a", "b", and "c" are matrices/vectors provided in .csv files.
 
-* Proponha uma variação da VNS (variable neighborhood search) que seja adequada para resolver as versões mono-objetivo do problema, ou seja, para otimizar separadamente as funções fC() e fE(), considerando as restrições definidas.
-* Explicite como uma solução candidata será modelada computacionalmente.
-* Proponha pelo menos três (03) estruturas de vizinhança.
-* Proponha uma heurística construtiva inteligente para gerar a solução inicial.
-* Considere alguma estratégia de refinamento (busca local).
-* Implemente e utilize o algoritmo proposto para resolver as versões mono-objetivo do problema. 
-* Como o método é estocástico, ele deve ser executado cinco vezes para cada uma das funçoes e os cinco resultados finais obtidos devem ser apresentados: para cada função otimizada (fC e fE), mostre os valores min, std e max considerando-se as 05 soluções finais encontradas.
-* Para cada funçao otimizada (fC e fE), apresente as 05 curvas de convergência do algoritmo sobrepostas em uma mesma figura, ou seja, evolução do valor de f em função do número de avaliações de soluçoes candidatas.
-* Para cada função otimizada, apresente a melhor solução encontrada explicitando a distribuição das tarefas aos agentes.
+* Propose a variation of Variable Neighborhood Search (VNS) that is suitable for solving the single-objective versions of the problem, i.e., to separately optimize the functions fC() and fE(), considering the defined constraints.
+* Explain how a candidate solution will be computationally modeled.
+* Propose at least three (03) neighborhood structures.
+* Propose an intelligent constructive heuristic to generate the initial solution.
+* Consider a refinement strategy (local search).
+* Implement and use the proposed algorithm to solve the single-objective versions of the problem.
+* Since the method is stochastic, it should be executed five times for each of the functions, and the five final results obtained should be presented: for each optimized function (fC and fE), show the min, std, and max values considering the 05 final solutions found.
+* For each optimized function (fC and fE), present the 05 convergence curves of the algorithm overlaid in the same figure, i.e., the evolution of the value of f as a function of the number of evaluations of candidate solutions.
+* For each optimized function, present the best solution found, explicitly stating the distribution of tasks among agents.
