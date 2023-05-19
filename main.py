@@ -26,7 +26,7 @@ def geraSolucaoInicial(m, n, a, b, c):
         
         if tarefa_atribuida:
             x[agente_escolhido, j] = 1  # Atribui a tarefa j ao agente agente_escolhido
-            disponibilidade[agente_escolhido] -= a[agente_escolhido, j]  # Atualiza a capacidade disponível do agente
+            disponibilidade[agente_escolhido] -= a[agente_escolhido, j] + c[agente_escolhido,j]  # Atualiza a capacidade disponível do agente
             
         if not tarefa_atribuida:
             print(f"A tarefa {j} não pode ser atribuída a nenhum agente.")
